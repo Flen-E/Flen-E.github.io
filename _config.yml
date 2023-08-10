@@ -1,7 +1,10 @@
 # Site
 title:              최정재
-bio:                '맡은 바에 책임을 다하는 것을 중요하게 생각 하는 개발자입니다.'
-description:        "다양한 방면으로 바라보는 것을 즐기는 개발자"
+bio:                '맡은 바에 책임을 다하는 것을 
+중요하게 생각 하는 개발자입니다.'
+description:        "다양한 방면으로 
+바라보는 것을 
+즐기는 개발자"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
