@@ -1,26 +1,23 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Me
+tags: [about, 최정재, flen-e, feature]
+date: 2023-08-11
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="http://Flen-E.github.io"><b>최정재</b></a> 는 창의적인 시각으로 다양한 가능성을 탐색하는 개발의 모험가</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Skills
+* MySql, Firebase, H2
+* node.js, SpringBoot
+* Java, JavaScript, Python, C#
+* React, FlutterFlow
+* Git, GitHub, Notion
+* Figma, BuilderX
 
-## Preview
+
+## Contatct Me
 
 {% capture images %}
     https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
