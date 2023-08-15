@@ -1,0 +1,195 @@
+﻿# 시작하게 된 계기들
+1, 2학년때는 마냥 게임을 개발하는 것이 즐거워 학교 수업보다는
+내가 하고 싶은 프로젝트를 진행하며 개발을 하였다.
+
+2학년을 마치고 나서 산업체 다니기 시작하였다. 
+멀어진 학업을 다시 따라 잡을 수 있도록
+주말마다 틈틈이 국비지원 학원을 
+다니면서 공부를 시작했다.
+사실상 학원은 기초가 없던 나에게 기초와 시작점을 알려주기에 좋았고,
+(DB, JPA, Html, CSS, JSP 등등)
+내가 어떤 개발을 좋아하고
+앞으로 해야 할지 고민을 해왔다.
+
+
+
+## 간단한 게임들 제작
+![enter image description here](https://i.ibb.co/9YppfxC/Kakao-Talk-20230814-195127518-02.jpg)
+![enter image description here](https://i.ibb.co/7GhrVnT/Kakao-Talk-20230814-195127518-01.jpg)
+![enter image description here](https://i.ibb.co/LZqZsBL/Kakao-Talk-20230814-195127518-05.jpg)![enter image description here](https://i.ibb.co/P471kS7/Kakao-Talk-20230814-195127518-04.jpg)
+![enter image description here](https://i.ibb.co/DVQ5cjY/Kakao-Talk-20230814-195127518-03.jpg)
+![enter image description here](https://i.ibb.co/rd2z4sZ/Kakao-Talk-20230814-195127518.jpg)
+[(57) 플렌이 - YouTube](https://www.youtube.com/channel/UCymz5SDT41hLrDRJ5EnI0Ow)
+제작한 게임영상을 올려둔 유튜브
+
+2학년까지 갈피를 잡지 못하며 여러가지 많이 해보며 느끼고
+여러 공부를 시도해보았다. 새로운 언어에 두려워 하지 않고
+구글검색을 통하여 하나씩 진행해 나갔다.
+산업체를 2020년부터 2021년 말에 계약 종료로 2022년에 3학년에 복학하게 되었다.
+20, 21년도에는 코로나 학점제가 있었다던데 못받은 것이 뭔가 아깝게 느껴지면서도 오프라인 수업을 들을 수 있어 다행이다는 생각이 들었다.
+
+# 요리 레시피 안내 시스템
+3학년 때 팀 프로젝트를 시작하면서 웹 개발에 관심을 가지게 되었다.
+1학기 팀프로젝트는 JavaFX를 이용하여 쇼핑몰을 만들었었는데
+서버 클라이언트 통신을 통해 내가 원하는 레시피를 가져오고
+그에 맞는 재료를 쿠팡에서 구매 할 수 있게 링크를 연결 해주었다.
+주제가 공공데이터 포탈을 이용하여 원하는 프로젝트 개발이었기에 
+[공공데이터포털 (data.go.kr)](https://www.data.go.kr/)
+공공데이터포털을 이용하여 주변 마트 위치를 가져와 지도에서 알려주고
+쿠팡, 만개의 레시피, 백종원 유튜브를 이용하여 
+
+![enter image description here](https://www.kbiznews.co.kr/news/photo/202305/94043_62976_5136.png)![enter image description here](https://www.10000recipe.com/company/images/pc_logo.png)
+![enter image description here](https://i.namu.wiki/i/IdqhT9K6t9z91ksd8RjLNy0sOCfttfU1-W0936wbVH7Uljp9Z9JgOWcDzbrd04AnBU7gmBibpbhKv6zB7tYiEA.webp)
+
+Java, JavaFX, MySQL,공공데이터 포털, Python 서버 클라이언트 통신으로 완료하여 가장 높은 점수를 받아 낼 수 있었다.
+노트북을 바꾸게 되면서 데이터 관리를 못하여 사진이 없는게 아쉽다.
+
+## 학교 예약시스템(ClickKit)
+덕분에 자신감도 붙기 시작했고, 
+다음 학기에는 전 학기와는 다른 방식으로 프로젝트를 진행하게 되었다. JavaFX를 활용하며 공공데이터 포털을  활용해야하는 제약 있는 환경이 아닌 제약없이  캡스톤 프로젝트를 시작하게 되었다.
+더불어, 학교 관계자들로부터 기존의 수기 작업으로 이뤄지던 시스템들 중 일부를 개발해 달라는 요청을 받게 되었는데, 그 중에서도 하나를 우리 팀이 맡기로 하였다.
+맡게 된 프로젝트의 시작은 코로나가 점점 풀리고 있던 시점에 학생들의
+시설물들의 무분별한 사용을 막고자 예약시스템을 만들어 달라고 요청을 하였다.
+2주에 한번씩 생활관 담당자들과 미팅을 가지며 요구사항을 받고 기능명세를 하여 다이어그램을 설계 후 스토리보드를 보여주며 프로젝트를 진행하였다.
+
+ - 생활관 관리자 요구사항
+
+| 번호 |요구사항  |
+|--|--|
+| 1 | 공간별, 구획 별 제한 인원 변경 |
+| 2 | 공간별, 구획 별 지정(예약 가능) 자리 변경 |
+| 3 |공간 운영시간 변경 |
+| 4 | 연장 가능 시간 및 연장 횟수 변경 |
+| 5 | 이용 안내 및 수칙 위반 사항 변경(공간별 설정) |
+| 6 | 수칙 위반자 예약 불가 기간 설정 |
+| 7 | 사용 당일 자가 온도 체크 기재 부분 |
+| 8 | 예약자 관련 모든 사항이 관리자 모드에서 한눈에 확인 및 다운로드 |
+
+ - 주요 기능 명세
+ 
+| 번호 |요구사항  |
+|--|--|
+| 1 | 로그인 |
+| 2 |시설 예약, 취소 |
+| 3 |체온 기재 |
+| 4 |이용 안내 수칙 서명|
+| 5 |제한 인원 변경|
+| 6 | 자리 변경 |
+| 7 | 운영시간 변경 |
+| 8 | 연장 가능 시간 및 횟수 변경 |
+| 9 | 이용 안내 및 수칙 위반 사항 변경 |
+| 10 | 예약자 현황 확인 및 다운로드 |
+
+팀원들과 매주 20분씩 회의를 가졌으며 역할을 분담후 프로젝트를 진행하였다.
+![enter image description here](https://i.ibb.co/DRTD1Rx/noname01.png)
+![enter image description here](https://i.ibb.co/j4RqS2t/noname02.png)
+![enter image description here](https://i.ibb.co/31XtZ9M/noname03.png)
+![enter image description here](https://i.ibb.co/PYF7p8t/noname04.png)
+
+React와 node.js를 이용하여 반응형 웹페이지를 구현하였다.
+![enter image description here](data:image/png;base64,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)
+![enter image description here](data:image/png;base64,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)
+
+관리자 페이지 예약 페이지를 나누어 구성하였으며 해당 프로젝트를 진행하면서 많은 문제점과 경험을 얻어갈 수 있었다.
+
+해당 프로젝트는 공부를 기반으로 프론트 엔드 백엔드를 나누는 것이 아닌 파트로 나누어 팀원 모두 React와 node.js를 경험 할 수 있었고 
+node.js와 브라우저를 위한 Promise 기반 HTTP 클라이언트인 axios를 이용하여 통신을 진행하였으며 exceljs, cookiejs 등 여러 라이브러리를 활용하여 구현을 하였다.
+처음으로 RESTful API로 제작하여 보다 재사용성을 높여 보다 수정하기 용이하게 제작하였다.
+
+![enter image description here](data:image/png;base64,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)
+
+개발을 잘 마치게 되어 높은 점수를 받으며 끝났지만 아쉽게도 코로나 격리 해제가 풀리게 되었지만 예상과 다르게 이용에 불편함이 없어 현재 쓰이고 있지는 않다.
+그리고 이 프로젝트에는 해결 해야할 문제가 남아있는데 CORS에러 문제이다.
+해당 프로젝트를 진행하고 나니 CORS에러가 나기 시작하였고 현재 프로젝트 동작에는 문제가 없어 그대로 진행하게 되었다.
+CORS는 Cross-Origin Resource Sharing 이라는 단어로 교차 출처 리소스 공유 정책이라고 해석할 수 있다.
+이를 해결하기 위해 동일 출처 정책(SOP)이 필요한데 만약 동일 출처가 아닌 경우 접근을 허용 해준다면 해커가 CSRF(Cross-Site Request Forgery)나 XSS(Cross-Site Scripting)등의 방법을 이용해서 개인정보를 가로챌 수 있는 것이다.
+CORS에러를 해결하기 위해서는 여러가지 방법이 있는데 프록시 서버를 만들어 클라이언트와 서버 사이의 중계 대리점을 만들어 모든 출처를 허용한 서버 대리점을 통해 요청을 해주면 되는 것이다. 
+
+![enter image description here](https://i.ibb.co/dkKFG9g/2023-08-15-001649.png)
+
+보안에 대한 자세한 지식이 없어 많은 골치를 앓았는데 앞으로 공부 해야 할 것들이 한참 남은 것 같다.
+
+[kitcse2018/Clickit (github.com)](https://github.com/kitcse2018/Clickit)
+(github 주소)
+
+## Kidlet
+
+4학년 1학기도 마찬가지로 캡스톤 프로젝트를 시작하였다.
+이번에도 고객의 요구사항을 받아 팀 프로젝트를 진행하면 나중에 있을 프로젝트에 도움이 될 것 같아서 팀원들 끼리 정한 프로젝트가 아닌 지인 중 초등학교 교사의 요구사항을 받아 프로젝트를 시작하였다.
+이번 프로젝트는 내가 팀장을 맡게 되어 작업 구성 및 기반을 만들었다.
+
+문제 정의를 간단히 하자면,
+전자기기 발달로 인해 인쇄매체 보다는 전자매체를 선호하게 되었고,
+학급 친구들과 선생님의 자유로운 정보 전달 및 소통을 위해 추억을 공유하며 정보를 알려주는 Kidlet이라는 학급 홈페이지 앱을 제작하게 되었다.
+
+요구사항
+| 번호 |요구사항  |
+|--|--|
+| 1 | 매일 학생들에게 도움이 되는 명언 출력 |
+| 2 | 학급 게시판 메모지와 같은 게시판으로 서로 소통 |
+| 3 | 사진 저장 및 댓글 기능 |
+| 4 | 연장 가능 시간 및 연장 횟수 변경 |
+| 5 | 학생들의 건의 사항을 선생님에게 익명/실명으로 작성 |
+| 6 | 선생님이 학급의 준비물 및 숙제 공지 기능 |
+| 7 | 시간표 (선생님이 편집가능) |
+
+이번 프로젝트는 저번 프로젝트의 문제점을 잘 숙지하여 진행하였다.
+일단 디자인이 전체적으로 짜임새가 없었다는 점,
+보안으로써의 취약점이 있다는점
+이 두가지를 중심으로 프로젝트를 시작하였다.
+
+이전까지는 kakaoOven을 이용하여 프로토 타입을 제작하였으나,
+기능이 훨씬 많은 BuilderX를 이용하여 제작을 시작하였다.
+제작 중 Figma라는 프로토타입 툴을 알게 되었고,
+kakaoOven -> BuilderX -> Figma로 옮기면서 
+디자인을 점차 자리잡게 되었다.
+
+![enter image description here](https://i.ibb.co/m4tqXrt/1.png)
+![enter image description here](https://i.ibb.co/41wzn9C/2.png)
+
+여러 프로토타입과 스토리보드를 만들어 
+선생님과 미팅을 가져 수정사항과 추가 개선사항을 추가하게 되었다.
+마찬가지로 여러 다이어그램으로 설계를 하였고 DB를 설계하였다.
+
+최종적으로 디자인이 정해지고 제작에 들어가게 되었다.
+
+![enter image description here](https://i.ibb.co/FxZwr16/1.png)
+![enter image description here](https://i.ibb.co/TgpDgxQ/2.png)
+![enter image description here](https://i.ibb.co/27GXdYq/3.png)
+![enter image description here](https://i.ibb.co/cNmLRGb/4.png)
+![enter image description here](https://i.ibb.co/3WKWcZK/5.png)![enter image description here](https://i.ibb.co/4fR9pPz/6.png)![ChatGpt도 추가한 모습](https://i.ibb.co/Wc4mftk/7.png)
+
+지인이 요구사항을 알려주고 수정사항, 개선사항을 보다 편하게 말해주었다보니 보다 더 많은 기능을 넣을 수 있었다.
+이번 프로젝트도 무사히 마칠 수 있었으며 보다 깔끔한 UI를 통해 만족스러운 결과가 도출 될 수 있었다.
+
+학급 홈페이지를 앱으로 만들어야 하다 보니 ANDROID, IOS 모두 호환이 되어야 한다고 생각하여 
+Cross-Platform 인 React-Native와 Flutter를 고민하게 되었고 점점 올라가는 점유율을 가진 Flutter를 선택하게 되었다.
+
+![enter image description here](https://blog.kakaocdn.net/dn/EXDQN/btrVq3PgI9I/3VKrAtJKaoCtjjrtkKkfLk/img.png)
+Flutter는 Dart언어 기반으로 Goggle에서 만든 프레임워크인데
+Flutter는 Flutter Document가 아닌 곳에서는 문제점이 생겼을 시 정보가 부족하여 찾기 어려운 점이 있었다.
+
+하지만 그만큼 Document가 잘 정돈되어 있어 차근차근 읽으면 문제를 해결 할 수 있었다.
+하지만 너무 생소한 Dart언어를 남은 2~3달 동안 완벽히 숙지하기 어렵기에 FlutterFlow라는 Flutter개발을 위한 온라인 플랫폼을 이용하여 보다 쉽게 제작을 하였다.
+
+서버는 Flutter와 호환이 좋은 Firebase를 이용하였으며 Firebase에서 제공하는 인증 서비스 보안 서비스를 이용하여 보다 안전하게 보안을 지켰으며
+무분별한 선생님 계정을 만드는 것을 막기 위하여 공직자 메일(korea.kr)을 통해서만 만들 수 있게 제약을 두었다.
+
+Firebase라는 NoSql을 처음 이용하게 되었는데 원래 설계하던 DataBase와는 접근 자체가 다르게 트리 구조 형식이 신기할 따름이었는데 보다 매력점인 점이 한두가지가 아니였다.
+데이터 추가에 있어서 제약이 적어 유연하며 데이터를 읽어오는 속도도 빠르다고 한다.
+
+![enter image description here](data:image/png;base64,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)
+
+해당 프로젝트는 현재 앱스토어에 출시 되었으며, 
+https://play.google.com/store/apps/details?id=com.kumoh.kidlet 링크를 통해서 다운을 받을 수 있다.
+현재는 사용이 중단되어 Firebase의 이용료와 Chat GPT이용료를 계속 지불 할 수 없어 하루 데이터 송신 제한이 걸려있다.
+
+학생은 이메일을 이용하여 가입을 진행 할 수 있고
+선생님 계정은 @korea.kr이메일을 이용해 회원가입이 가능한 상태이다.
+
+apk 다운로드 주소(PC 또는 직접 다운로드)
+https://drive.google.com/file/d/1uoXY0B30-0WAn-YkZKFdpPemkMLBiLYV/view
+
+## 마치며
+  
+3개의 프로젝트와 작은 프로젝트를 진행하면서 웹 개발에 대한 흥미와 관심이 더욱 높아졌다. Front-End 개발에 대한 즐거움을 느끼며, 그것이 나의 목표가 되었다. 프로젝트를 진행하면서 보다 창의적으로 만들어내는 것이 기쁨을 주었고, 이러한 경험을 통해 멋진 개발자로 성장하고 싶어하는 도전을 하게 되었다. 계속해서 다양한 프로젝트를 통해 더 나은 개발자로 발전해 나가는 것이 나의 목표이다.
