@@ -1,4 +1,4 @@
-﻿
+
 
 # React-Hook
 
@@ -54,7 +54,11 @@ return하여 bye가 출력이 됨을 확인 해볼 수 있다.
 ![enter image description here](https://i.ibb.co/P69dHjW/2.png)
 
 
+
+## 마무리
+
+
+
 여기까지 알기 쉽게 간단히 useState와 useEffect에 대해 알아보았다.
 간단한 내용이니 까먹지 않게 한번씩 보고 여러 프로젝트를 진행하여 몸에 익혀야겠다.
-
 
