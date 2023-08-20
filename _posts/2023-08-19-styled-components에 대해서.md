@@ -2,10 +2,11 @@
 layout: post
 title:  "Styled-Components 에 대해서"
 date:   2023-08-19 18:19:00 -0500
-project: true
 tags: react
 ---
- 
+
+
+
  ## Styled-Components 
 
 ![enter image description here](https://i.ibb.co/XbgpYHY/img.png)
