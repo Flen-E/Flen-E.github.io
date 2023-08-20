@@ -6,6 +6,7 @@ tags: react javascript
 ---
 
  # Styled-Components 
+ 
  styled-components라는 것을 알아보도록 하자
 
 ![enter image description here](https://i.ibb.co/XbgpYHY/img.png)
