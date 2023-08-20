@@ -5,7 +5,7 @@ date:   2023-08-20 18:19:00 -0500
 tags: typescript react
 ---
  
- ## React + TypeScript 시작
+ # React + TypeScript 시작
 
 여태`React`를 `JavaScript`로 짜기도 했고 수업이나 프로젝트 또한 `JavaScript`로 진행하였지만<br/>
 `TypeScript` 의 매력을 알고 이제부터 프로젝트들을 `TypeScript`로 진행 할까 한다. 
