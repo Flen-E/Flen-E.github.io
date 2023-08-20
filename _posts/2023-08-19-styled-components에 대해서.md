@@ -7,7 +7,7 @@ tags: react
 
 
 
- ## Styled-Components 
+ # Styled-Components 
 
 ![enter image description here](https://i.ibb.co/XbgpYHY/img.png)
 
