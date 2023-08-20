@@ -3,7 +3,7 @@ layout: post
 title:  "React + TypeScript 시작하기"
 date:   2023-08-20 18:19:00 -0500
 project: true
-tags: typescript
+tags: typescript react
 ---
  
  ## React + TypeScript 시작
