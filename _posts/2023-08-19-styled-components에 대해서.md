@@ -2,17 +2,14 @@
 layout: post
 title:  "Styled-Components 에 대해서"
 date:   2023-08-19 18:19:00 -0500
-tags: react
+tags: react javascript
 ---
 
-
-
  # Styled-Components 
+ styled-components라는 것을 알아보도록 하자
 
 ![enter image description here](https://i.ibb.co/XbgpYHY/img.png)
 
-
-styled-components라는 것을 알아보도록 하자
 
 ![enter image description here](https://i.ibb.co/ZHTHh7J/2023-08-19-001527.png)
 우리가 알고 있는 다양한 사이트들이 styled-component를 사용중이라고 한다. github 레고 라이엇 등등
