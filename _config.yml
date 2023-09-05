@@ -4,7 +4,7 @@ bio:                '혁신적인 아이디어와 끈기로 미래를 디자인�
 description:        "창의적인 시각으로 다양한 가능성을 탐색하는 개발의 모험가"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/logo.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
