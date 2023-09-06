@@ -2,11 +2,11 @@
 layout: post
 title:  "Styled-Components 에 대해서"
 date:   2023-08-19 18:19:00 -0500
-tags: react javascript
+tags: react
 ---
 
- # Styled-Components 
- 
+# Styled-Components
+
  styled-components라는 것을 알아보도록 하자
 
 ![enter image description here](https://i.ibb.co/XbgpYHY/img.png)
