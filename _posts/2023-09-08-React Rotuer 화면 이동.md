@@ -1,4 +1,11 @@
-﻿# React Router
+---
+layout: post
+title:  "React Router 화면 이동"
+date:   2023-08-16 18:19:00 -0500
+tags: react
+---
+ 
+# React Router
 
 페이지를 만들었으면 페이지 이동할 수단이 필요한데 리액트에서는 이를 `React Router`를 통해 처리 할 수 있다.
 들어가기 앞서 `React Router`에 대해서 알아보고 가겠다.
