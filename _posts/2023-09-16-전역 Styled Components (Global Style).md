@@ -1,4 +1,12 @@
-﻿# 전역 Styled Components (Global Style)
+---
+layout: post
+title:  "Global Styled Components (Global Style)를 적용시켜보자"
+date:   2023-08-16 18:19:00 -0500
+tags: react typescript
+---
+
+ 
+# 전역 Styled Components (Global Style)
 
 `Styled Component`를 이용해 styled을 주는 방법을 이전 포스팅에서 알아보았을것이다. 
 
