@@ -21,6 +21,7 @@ tags: react typescript
 ![enter image description here](https://i.ibb.co/3NCJwF5/reset-css.png)
 
 [Eric Meyer’s “Reset CSS” 2.0 | CSS Reset (cssdeck.com)](https://cssdeck.com/blog/scripts/eric-meyer-reset-css/)
+
 해당 사이트에 들어가면 `reset-css` 를 쉽게 얻을 수 있다.
 
 ## Styled-Components
@@ -46,6 +47,7 @@ return(
 	<Router/>
 )
 ```
+
 같이 두 개의 Element 를 보내고 싶다면 보통은
 
 ```
@@ -66,8 +68,10 @@ return(
 
 ## Font도 바꿔보자
 
-`body`안에 들어갈 Font들도 Global Style로 적용해 볼것인데,<br>
+`body`안에 들어갈 Font들도 Global Style로 적용해 볼것인데,
+
 [Browse Fonts - Google Fonts](https://fonts.google.com/)
+
 해당 사이트를 이용하면 다양한 폰트들을 무료로 이용할 수 있다.
 
 ![enter image description here](https://i.ibb.co/5Lp1NVy/font.png)
@@ -82,13 +86,13 @@ use on the web 박스가 있는데 <link>말고 @import를 눌러준후 style을
 <script src="https://gist.github.com/Flen-E/9ac22a3c60c3eae9e951261aec9556a8.js"></script>
 
 @import를 복사하여 넣어준뒤 해당 폰트를 쓸 곳에 (나는 body에 적용해주었다.)
-![enter image description here](https://i.ibb.co/0fq8Xh0/2023-09-15-235731.png)
-해당 font-family를 복사하여 넣어주면 된다.
 
+![enter image description here](https://i.ibb.co/0fq8Xh0/2023-09-15-235731.png)
+
+해당 font-family를 복사하여 넣어주면 된다.<br>
 위에 `GlobalStyle`은 reset-css와 font를 @import 해준뒤 `body`에 적용시킨 모습이다.
 
 ## Theme도 설정해주자
-
 
 ### Styled.d.ts
 `styled.d.ts` 라는 타입 선언 파일을 생성해주자.<br>
@@ -96,6 +100,7 @@ use on the web 박스가 있는데 <link>말고 @import를 눌러준후 style을
 `TypeScript`는 해당 함수의 타입을 정의해 주어야 하는데 한데 모아서 정리해준다고 생각하면 좋을 것 같다.
 
 <li> ./module/styled.d.ts</li>
+
 <script src="https://gist.github.com/Flen-E/e0e7b1ff92b02b951d12a8723cffd752.js"></script>
 
 기본적으로 `DefaultTheme` 는 비어있는 상태인데 이곳에 공통적으로 사용되는 <br>
@@ -122,6 +127,7 @@ body {
 	color:${(props) =>  props.theme.textColor};	
 }
 ```
+
 `body`를 해당 처럼 작성이 가능하다는 것이다.<br>
 그럼 이제 `background-color`은 우리가 설정한 `bgColor`가 될 것이고,<br>
 `color`은 설정해준 `textColor`가 될 것이다.<br>
@@ -130,10 +136,3 @@ body {
 
 `theme.ts`에 설정해준 색으로 변하게 된 것을 확인 할 수 있다.<br>
 (색은 임의로 바꿔줌)<br>
-
-## 마무리
-
-`GlobalStyle`을 이용하여 reset-css, font, theme등을 변경해 보았다.<br>
-이를 이용하여 dark테마 white테마 식으로도 만들어 줄 수 있으며 <br>
-해당 Global Style로 기본 나만의 style을 모두 적용해줄 수 있다.<br>
-
