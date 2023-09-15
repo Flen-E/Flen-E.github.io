@@ -129,7 +129,7 @@ body {
 ![enter image description here](https://i.ibb.co/VTxqySS/2023-09-16-011951.png)
 
 `theme.ts`에 설정해준 색으로 변하게 된 것을 확인 할 수 있다.<br>
-(색은 임의로 바꿔줌)
+(색은 임의로 바꿔줌)<br>
 
 ## 마무리
 
