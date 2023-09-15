@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Global Styled Components (Global Style)를 적용시켜보자"
-date:   2023-08-16 18:19:00 -0500
+date:   2023-09-16 01:19:00 -0500
 tags: react typescript
 ---
 
