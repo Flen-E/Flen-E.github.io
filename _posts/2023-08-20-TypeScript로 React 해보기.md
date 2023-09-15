@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "React + TypeScript 시작하기"
-date:   2023-08-20 18:19:00 -0500
+date:   2023-09-16 01:19:00 -0500
 tags: typescript react
 ---
  
