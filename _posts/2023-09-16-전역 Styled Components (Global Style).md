@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Global Styled Components (Global Style)를 적용시켜보자"
-date:   2023-09-15 01:19:00 -0500
+date:   2023-09-16 01:19:00 -0500
 tags: react typescript
 ---
 
@@ -124,15 +124,3 @@ use on the web 박스가 있는데 <link>말고 @import를 눌러준후 style을
 `body`의 `background-color`와 `color`를 `theme`를 이용하여 바꾸어보았다. <br>
 그럼 `background-color`은 우리가 설정한  `bgColor`가 될것이며, <br>
 `color`은 우리가 설정한 `textColor`가 될 것이다.<br>
-
-![enter image description here](https://i.ibb.co/0fq8Xh0/2023-09-15-235731.png)
-![enter image description here](https://i.ibb.co/VTxqySS/2023-09-16-011951.png)<br>
-
-`theme.ts`에 설정해 준 색으로 변하게 된 것을 확인 할 수 있다. <br>
-(색은 임의로 변경한 모습)<br>
-
-## 마무리
-
-`GlobalStyle`을 이용하여 `reset-css`, `font`, `theme`등을 변경해 보았다.<br>
-이를 이용하여 dark테마 white테마 등으로 구분해 줄 수도 있으며<br>
-해당 Global Style로 나만의 전역 style을 모두 적용해 줄 수 있다.
