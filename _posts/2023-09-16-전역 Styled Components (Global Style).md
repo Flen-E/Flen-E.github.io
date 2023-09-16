@@ -119,20 +119,13 @@ use on the web 박스가 있는데 <link>말고 @import를 눌러준후 style을
 이제 `App`은 `ThemeProvider`내에 존재하게 되니 `App`은 `Theme`에 접근을 할 수 있는 것이다.<br>
 그럼 우린 `App`의 `GlobalStyle`에 적용해 볼 것이다.<br>
 
-```
-body {
-	line-height : 1;
-	font-family: 'Signika Negative', sans-serif;
-	background-color:${(props) => props.theme.bgColor};
-	color:${(props) => props.theme.textColor};
-}
-```
+<script src="https://gist.github.com/Flen-E/beb66614e5730d35327846d4fbe2e4c4.js"></script>
 
 `body`의 `background-color`와 `color`를 `theme`를 이용하여 바꾸어보았다. <br>
 그럼 `background-color`은 우리가 설정한  `bgColor`가 될것이며, <br>
 `color`은 우리가 설정한 `textColor`가 될 것이다.<br>
 
-![enter image description here](https://i.ibb.co/VTxqySS/2023-09-16-011951.png)
+![enter image description here](https://i.ibb.co/VTxqySS/2023-09-16-011951.png)<br>
 
 `theme.ts`에 설정해 준 색으로 변하게 된 것을 확인 할 수 있다. <br>
 (색은 임의로 변경한 모습)<br>
