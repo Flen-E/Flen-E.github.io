@@ -125,6 +125,7 @@ use on the web 박스가 있는데 <link>말고 @import를 눌러준후 style을
 그럼 `background-color`은 우리가 설정한  `bgColor`가 될것이며, <br>
 `color`은 우리가 설정한 `textColor`가 될 것이다.<br>
 
+![enter image description here](https://i.ibb.co/0fq8Xh0/2023-09-15-235731.png)
 ![enter image description here](https://i.ibb.co/VTxqySS/2023-09-16-011951.png)<br>
 
 `theme.ts`에 설정해 준 색으로 변하게 된 것을 확인 할 수 있다. <br>
