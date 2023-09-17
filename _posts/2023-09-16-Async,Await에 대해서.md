@@ -11,12 +11,12 @@ tags: react javascript
 ##  Async/Await 무엇일까?
 
 `async/await`는 `Promise`를 좀 더 가독성 좋고 유지보수성 좋게 도와주며 동기적으로 실행되는 것처럼 보이게 하는 문법이다.<br>
-Async는 asyncronous(비동기)인데 우리가 JS를 사용하다 보면 비동기 방식을 자주 사용을 하게 될 것이다. <br>
+`Async`는 `asyncronous(비동기)`인데 우리가 JS를 사용하다 보면 비동기 방식을 자주 사용을 하게 될 것이다. <br>
 이때 비동기 호출 후 이를 처리해주는 콜백 함수의 개념은 매우 중요해지는데 <br>
 이때 콜백함수가 깊어지면 코드가 복잡해 가독성이 떨어지게 되는데,<br>
- async와 await를 이용하여 보다 깔끔하게 처리를 할 수 있게 되었다.
+`async`와 `await`를 이용하여 보다 깔끔하게 처리를 할 수 있게 되었다.
 
-이를 사용하는 방법은 함수의 앞부분에 async 키워드를 붙여주고<br>
+이를 사용하는 방법은 함수의 앞부분에 `async` 키워드를 붙여주고<br>
 해당 함수 내부에서 `Promise` 앞부분에 await 키워드를 사용해주면 된다.<br>
 
 이렇게 해주면 `Promise`가 끝날 때까지 기다리고 난 뒤 후의 작업을 실행시킬수 있다.
@@ -53,7 +53,7 @@ Async는 asyncronous(비동기)인데 우리가 JS를 사용하다 보면 비동
 
 <script src="https://gist.github.com/Flen-E/aa7b1c94e5268c2ad29b69bf74ca9c91.js"></script>
 
-`setTimeout()` 자체가 `Promise`반환을 하지 않아 new Promise로 감싸놨는데 이렇게 작성하면 콜백함수로 받아 작업을 하고 return으로 Promise를 던지고 다음 then 작업을 하게 되는 수행을 하게 된다.
+`setTimeout()` 자체가 `Promise`반환을 하지 않아 new Promise로 감싸놨는데 이렇게 작성하면 콜백함수로 받아 작업을 하고 return으로 `Promise`를 던지고 다음 `then` 작업을 하게 되는 수행을 하게 된다.
 
 ## Async/Await 사용해보자
 이제 가독성도 챙겼고 유지보수하기도 쉬운 코드를 얻었지만 계속 되는 then과 콜백함수를 줄이기 위해 `async/await`를 사용 하는 것이다.
