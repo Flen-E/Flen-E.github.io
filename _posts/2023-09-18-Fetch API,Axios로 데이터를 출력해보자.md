@@ -5,6 +5,7 @@ date:   2023-09-18 18:25:00 -0500
 tags: react typescript
 ---
 
+
 # Fetch API, Axios로 데이터를 가져오자
 
 이번 포스팅에서는 HTTP를 이용하여 데이터를 가져오는 방법을 알아보도록 하겠다.<br>
