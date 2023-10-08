@@ -30,6 +30,7 @@ style을 Global로 적용시키는 것은 어렵지않다.<br>
 이전에 배운 styled-component 라이브러리를 사용 할 줄 안다면 금방 할 것이다.
 
 ```
+npm install --save styled-components
 npm install @types/styled-components
 ```
 npm 설치 명령어를 통해 `styled-component`를 설치 해준후<br>
