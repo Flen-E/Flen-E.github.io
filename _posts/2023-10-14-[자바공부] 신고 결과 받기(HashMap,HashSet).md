@@ -68,10 +68,10 @@ tags: algorithm java
 #### 입출력 예시
 ##### 입출력 예
 
-id_list|report| k| result|
+|id_list|report| k| result|
 |---|---|---|---|
-|["muzi", "frodo", "apeach", "neo"]|["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]|2|[2,1,1,0]
-|["con", "ryan"]|["ryan con", "ryan con", "ryan con", "ryan con"]|2|[2,1,1,0]
+|["muzi", "frodo", "apeach", "neo"]|["muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi"]|2|[2,1,1,0]|
+|["con", "ryan"]|["ryan con", "ryan con", "ryan con", "ryan con"]|2|[2,1,1,0]|
 
 ##### 입출력 예 설명
 ##### 입출력 예#1
