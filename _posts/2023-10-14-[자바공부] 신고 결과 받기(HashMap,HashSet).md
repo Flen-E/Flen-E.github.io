@@ -21,7 +21,7 @@ tags: algorithm java
     -   유저가 신고한 모든 내용을 취합하여 마지막에 한꺼번에 게시판 이용 정지를 시키면서 정지 메일을 발송합니다.
 
 다음은 전체 유저 목록이 ["muzi", "frodo", "apeach", "neo"]이고, k = 2(즉, 2번 이상 신고당하면 이용 정지)인 경우의 예시입니다.
-유저 ID|유저가 신고한 ID | 설명|
+|유저 ID|유저가 신고한 ID | 설명|
 |---|---|---|
 |"muzi"|"frodo"|"muzi"가 "frodo"를 신고했습니다.
 |"apeach"|"frodo"|"apeach"가 "frodo"를 신고했습니다.
@@ -30,7 +30,7 @@ tags: algorithm java
 |"apeach"| "muzi"|"apeach"가 "muzi"를 신고했습니다.
 
 각 유저별로 신고당한 횟수는 다음과 같습니다.
-유저 ID|신고당한 횟수 | 
+|유저 ID|신고당한 횟수 | 
 |---|---|
 |"muzi"|1|
 |"frodo"|2|
