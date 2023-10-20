@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "[자바 공부] [자바 공부] 신고 결과 받기 HashSet, HashMap 사용하고 알아보기"
+title:  "[자바 공부] 신고 결과 받기 HashSet, HashMap 사용하고 알아보기"
 date:   2023-10-14 09:30:00 -0500
 tags: algorithm java
 ---
