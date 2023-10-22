@@ -23,11 +23,11 @@ tags: algorithm java
 다음은 전체 유저 목록이 ["muzi", "frodo", "apeach", "neo"]이고, k = 2(즉, 2번 이상 신고당하면 이용 정지)인 경우의 예시입니다.
 |유저 ID|유저가 신고한 ID | 설명|
 |---|---|---|
-|"muzi"|"frodo"|"muzi"가 "frodo"를 신고했습니다.
-|"apeach"|"frodo"|"apeach"가 "frodo"를 신고했습니다.
-|"frodo"|"neo"|"frodo"가 "neo"를 신고했습니다.
-|"muzi"|"neo"|"muzi"가 "neo"를 신고했습니다.
-|"apeach"| "muzi"|"apeach"가 "muzi"를 신고했습니다.
+|"muzi"|"frodo"|"muzi"가 "frodo"를 신고했습니다.|
+|"apeach"|"frodo"|"apeach"가 "frodo"를 신고했습니다.|
+|"frodo"|"neo"|"frodo"가 "neo"를 신고했습니다.|
+|"muzi"|"neo"|"muzi"가 "neo"를 신고했습니다.|
+|"apeach"| "muzi"|"apeach"가 "muzi"를 신고했습니다.|
 
 각 유저별로 신고당한 횟수는 다음과 같습니다.
 |유저 ID|신고당한 횟수 | 
@@ -41,10 +41,10 @@ tags: algorithm java
 
 유저 ID|유저가 신고한 ID | 정지된 ID|
 |---|---|---|
-|"muzi"|["frodo", "neo"]|["frodo", "neo"]
-|"frodo"|["neo"]|["neo"]
-|"apeach"|["muzi", "frodo"]|["frodo"]
-|"neo"|없음|없음
+|"muzi"|["frodo", "neo"]|["frodo", "neo"]|
+|"frodo"|["neo"]|["neo"]|
+|"apeach"|["muzi", "frodo"]|["frodo"]|
+|"neo"|없음|없음|
 따라서 "muzi"는 처리 결과 메일을 2회, "frodo"와 "apeach"는 각각 처리 결과 메일을 1회 받게 됩니다.
 
 이용자의 ID가 담긴 문자열 배열  `id_list`, 각 이용자가 신고한 이용자의 ID 정보가 담긴 문자열 배열  `report`, 정지 기준이 되는 신고 횟수  `k`가 매개변수로 주어질 때, 각 유저별로 처리 결과 메일을 받은 횟수를 배열에 담아 return 하도록 solution 함수를 완성해주세요.
