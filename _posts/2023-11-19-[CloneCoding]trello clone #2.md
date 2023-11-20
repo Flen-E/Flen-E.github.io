@@ -2,6 +2,7 @@
 layout: post
 title:  "Trello Clone Coding #2"
 date:   2023-11-19 15:25:00 -0500
+excerpt: "Board를 3개로 나누어 보자"
 tags: react typescript trello
 project: true
 ---
