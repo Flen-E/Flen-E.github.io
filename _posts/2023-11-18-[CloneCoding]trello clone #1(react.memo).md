@@ -1,9 +1,10 @@
 ﻿---
 layout: project
-title:  "react-beautiful-dnd 사용하기"
-date:   2023-11-20 15:25:00 -0500
+title:  "Trello Clone Coding #1 (React.memo)"
+date:   2023-11-18 15:25:00 -0500
 tags: react typescript trello
 ---
+
 # Trello Clone Coding #1 (React.memo)
 
 ## 시작하기 앞서
