@@ -1,8 +1,9 @@
 ﻿---
-layout: project
+layout: post
 title:  "Trello Clone Coding #2"
 date:   2023-11-19 15:25:00 -0500
 tags: react typescript trello
+project: true
 ---
 
 # Trello Clone Coding #2
