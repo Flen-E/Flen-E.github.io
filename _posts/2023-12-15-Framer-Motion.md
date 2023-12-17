@@ -98,8 +98,8 @@ delayChildren은 자식들에게 딜레이를 주는 것이고, staggerChildren�
 
 ```
 <Box
-	whileHover = {{rotateZ :  90}}
-	whileTap = {{scale : 1, borderRadius : "100px"}}
+	whileHover = {% raw %}{{rotateZ :  90}}{% endraw %}
+	whileTap = {% raw %}{{scale : 1, borderRadius : "100px"}}{% endraw %}
 />
 ```
 
@@ -131,8 +131,8 @@ MotionValue 는 애니메이션 내의 수치를 트래킹할 때 필요한 것�
 ```
 const x = useMotionValue(0);
 //short version
-<motion.div style={{x}}/>
-//<motion.div style={{x : x}}/>
+<motion.div style={% raw %}{{x}}{% endraw %}/>
+//<motion.div style={% raw %}{{x : x}}{% endraw %}/>
 ```
 
 형식으로 x좌표를 추적 할 수 있다.<br>
@@ -163,7 +163,7 @@ const  scaleY  =  useTransform(scrollYProgress, [0,1],[1, 5]);
 .
 .
 .
-<Box style ={{scale : scaleY}}/>
+<Box style ={% raw %}{{scale : scaleY}}{% endraw %}/>
 
 ```
 
@@ -201,14 +201,14 @@ transition으로 duration을 주었다.<br>
 하지만 먼저 로고가 먼저 그려지고 색을 채워지는 것을 원한 다면 특정 property의 transition의 시간을 정해주면 되는데,<br>
 
 ```
-transition  ={{
+transition  ={% raw %}{{
 	default:{
 		duration :  5
 	},
 	fill : {
 		duration :  1, delay :  2,
 	}
-}}
+}}{% endraw %}
 ```
 default에는 그대로 duration을 주고 하지만 fill이라는 property를 특정해서 duration과 delay를 주어 따로 진행 되도록 적용해 주었다.<br>
 
@@ -253,12 +253,12 @@ return (
 	<Wrapper  onClick={toggleClicked}>
 		<Box>
 			{!clicked ? (
-				<Circle  layoutId = "circle"  style={{ borderRadius:  50, }}/>
+				<Circle  layoutId = "circle"  style={% raw %}{{ borderRadius:  50, }}{% endraw %}/>
 			) : null}
 		</Box>
 		<Box>
 			{!clicked ? null : (
-				<Circle  layoutId = "circle"  style={{ borderRadius:  0,}}/>
+				<Circle  layoutId = "circle"  style={% raw %}{{ borderRadius:  0,}}{% endraw %}/>
 			)}
 		</Box>
 	</Wrapper>

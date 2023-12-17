@@ -82,9 +82,9 @@ setSearchOpen((prev) =>  !prev);
 ...
 
 <Input
-	initial=  {{scaleX :  0}}
+	initial= {% raw %}{{scaleX :  0}}{% endraw %}
 	animate={inputAnimation}
-	transition={{ type:  "linear" }}
+	transition={% raw %}{{ type:  "linear" }}{% endraw %}
 	placeholder="제목, 사람, 장르"
 />
 ```
