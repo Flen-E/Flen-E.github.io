@@ -10,6 +10,7 @@ project: true
 # Netflix  Clone #1
 
 ## 시작하기 앞서
+ 
 이전에 framer-motion을 포스팅 하였는데 이를 적극 활용하고 이전에 배운 기술들을 종합하여 넷플릭스 사이트를 클론코딩 해보도록 하겠다.
 크게 Header, Home Screen, Slider Part, Animation, Modal, Search 순으로 제작하며 포스팅 하겠다.
 이번 포스팅에서는 Header로 시작하겠다.
