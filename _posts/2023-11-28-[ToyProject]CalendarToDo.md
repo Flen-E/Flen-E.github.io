@@ -3,8 +3,7 @@ layout: post
 title:  "CalendarToDo #기획"
 date:   2023-11-28 19:25:00 -0500
 excerpt: "ToyProject를 시작하기 앞서 기획을 짜보도록하자"
-tags: react typescript CalendarToDo
-project: true
+tags: CalendarToDo
 ---
 
 # [ToyProject] CalendarToDo #기획

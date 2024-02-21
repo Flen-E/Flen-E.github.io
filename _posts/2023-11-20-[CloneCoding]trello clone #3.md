@@ -3,8 +3,7 @@ layout: post
 title:  "Trello Clone Coding #3"
 date:   2023-11-20 19:25:00 -0500
 excerpt: "item들을 서로 Drag and Drop시켜보자"
-tags: react typescript trello
-project: true
+tags: trello
 ---
 
 # Trello Clone Coding #3

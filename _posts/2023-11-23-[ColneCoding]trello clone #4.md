@@ -3,8 +3,7 @@ layout: post
 title:  "Trello Clone Coding #4"
 date:   2023-11-23 19:25:00 -0500
 excerpt: "snapshot을 이용하여 styled를 주도록 하자"
-tags: react typescript trello
-project: true
+tags: trello
 ---
 
 # Trello Clone Coding #4

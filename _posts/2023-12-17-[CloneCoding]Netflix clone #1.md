@@ -3,8 +3,8 @@ layout: post
 title:  "Netflix  Clone #1"
 date:   2023-12-17 01:25:00 -0500
 excerpt: "프로젝트 목표를 정의하고 계획을 짠뒤 Header를 만들어보자"
-tags: react typescript Netflix
-project: true
+tags: Netflix
+
 ---
 
 # Netflix  Clone #1
