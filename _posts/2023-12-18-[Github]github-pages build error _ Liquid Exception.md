@@ -4,6 +4,7 @@ title:  "[Github] Liquid Exception: Liquid syntax error"
 date:   2023-12-18 18:25:00 -0500
 excerpt: "github page 포스팅에러 Liquid Exception에 대해서 알아보자"
 tags: github
+category : [github]
 ---
 
 # [Github] Liaqid Exception: Liquid syntax error

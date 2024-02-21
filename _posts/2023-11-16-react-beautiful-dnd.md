@@ -3,6 +3,7 @@ layout: post
 title:  "react-beautiful-dnd 사용하기"
 date:   2023-11-16 18:25:00 -0500
 tags: react typescript
+category : [react]
 ---
 
 # react-beautiful-dnd 사용하기

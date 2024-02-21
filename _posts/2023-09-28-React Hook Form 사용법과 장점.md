@@ -3,6 +3,7 @@ layout: post
 title:  "React Hook Form의 장점을 알고 사용해보자"
 date:   2023-09-28 18:25:00 -0500
 tags: react typescript
+category : [react]
 ---
 
 

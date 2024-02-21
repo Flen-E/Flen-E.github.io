@@ -4,6 +4,7 @@ title:  "Animation - Framer Motion"
 date:   2023-12-15 18:25:00 -0500
 excerpt: "Framer-Motion을 활용하여 다양한 애니메이션 효과를 내보자"
 tags: react typescript
+category : [react]
 ---
 
 #  Animation - Framer Motion

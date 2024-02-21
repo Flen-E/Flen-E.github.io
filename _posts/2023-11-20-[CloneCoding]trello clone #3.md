@@ -4,6 +4,7 @@ title:  "Trello Clone Coding #3"
 date:   2023-11-20 19:25:00 -0500
 excerpt: "item들을 서로 Drag and Drop시켜보자"
 tags: trello
+category : [ToyProject 개발일지]
 ---
 
 # Trello Clone Coding #3

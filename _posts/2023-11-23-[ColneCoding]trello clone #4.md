@@ -4,6 +4,7 @@ title:  "Trello Clone Coding #4"
 date:   2023-11-23 19:25:00 -0500
 excerpt: "snapshot을 이용하여 styled를 주도록 하자"
 tags: trello
+category : [ToyProject 개발일지]
 ---
 
 # Trello Clone Coding #4

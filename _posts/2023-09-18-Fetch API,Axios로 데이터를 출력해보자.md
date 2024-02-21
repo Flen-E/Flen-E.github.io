@@ -3,7 +3,7 @@ layout: post
 title:  "Fetch API,Axios로 데이터를 출력해보자"
 date:   2023-09-18 18:25:00 -0500
 tags: react typescript
-category : [react] [typescript]
+category : [react]
 ---
 
 

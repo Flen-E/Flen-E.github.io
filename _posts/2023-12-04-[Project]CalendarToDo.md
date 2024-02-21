@@ -4,6 +4,7 @@ title:  "CalendarToDo #개발"
 date:   2023-12-04 19:25:00 -0500
 excerpt: "다음 프로젝트는 어떻게 기록을 남기며 진행 할지 더 자세히 설계를 하고 다져보도록 하겠다."
 tags: CalendarToDo
+category : [ToyProject 개발일지]
 
 ---
 
