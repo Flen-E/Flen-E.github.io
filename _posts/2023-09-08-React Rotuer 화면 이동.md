@@ -3,6 +3,7 @@ layout: post
 title:  "React Router 화면 이동"
 date:   2023-09-08 18:19:00 -0500
 tags: react
+category : [react]
 ---
  
 # React Router

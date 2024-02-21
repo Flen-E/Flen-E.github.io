@@ -2,7 +2,8 @@
 layout: post
 title:  "React-Hook에 대해 간단히 알아보자(useState, useEffect)"
 date:   2023-08-16 18:19:00 -0500
-tags: react javascript
+tags: react
+category : [react]
 ---
 
 # React-Hook

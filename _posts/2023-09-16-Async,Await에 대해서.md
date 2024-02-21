@@ -2,7 +2,8 @@
 layout: post
 title:  "Async/Await 간단하게 사용해보자"
 date:   2023-09-16 18:19:00 -0500
-tags: react javascript
+tags: react
+category : [react]
 ---
 
 #  Async/Await 사용해보기

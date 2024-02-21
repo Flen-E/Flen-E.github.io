@@ -3,6 +3,7 @@ layout: post
 title:  "Styled-Components 에 대해서"
 date:   2023-08-19 18:19:00 -0500
 tags: react
+category : [react]
 ---
 
 # Styled-Components

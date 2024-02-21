@@ -3,6 +3,7 @@ layout: post
 title:  "React + TypeScript 시작하기"
 date:   2023-08-20 01:19:00 -0500
 tags: typescript react
+category : [react] [typescript]
 ---
  
 # React + TypeScript 시작
