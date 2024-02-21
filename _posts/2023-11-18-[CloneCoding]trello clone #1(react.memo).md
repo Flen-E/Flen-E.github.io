@@ -3,8 +3,7 @@ layout: post
 title:  "Trello Clone Coding #1"
 date:   2023-11-18 15:25:00 -0500
 excerpt: "React.memo를 사용하여 리렌더링을 방지해보도록 하자"
-tags: react typescript trello
-project: true
+tags: trello
 ---
 
 # Trello Clone Coding #1 (React.memo)
