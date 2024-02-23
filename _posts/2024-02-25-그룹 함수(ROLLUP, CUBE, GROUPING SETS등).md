@@ -172,4 +172,19 @@ SELECT 상품ID, 날짜, SUM(매출액) 총계
 이제 배운 것들을 응용하여 SQLD 문제를 풀어주면 될 거 같다.
 
 
+# GROUPING
+
+NULL이 들어가는 부분을 채워주는 용도로 시험에 자주 나오던데   
+GROUPING은 집계함수들을 지원하는 함수로 집계가 계산된 결과에 대해서는 1의 값을 그렇지 않은 결과에 대해서는 0의 값을 가진다.  
+
+```
+SELECT 
+    CASE GROUPING(상품ID) WHEN 1 THEN '모든 상품' ELSE 상품ID END AS 상품ID,
+    CASE GROUPING(날짜) WHEN 1 THEN '모든 날짜' ELSE 날짜 END AS 날짜,
+    SUM(매출액) AS 총액
+FROM 상품
+GROUP BY CUBE(상품ID,날짜);
+```
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/z57xfsb/25-11.png" alt="25-11" border="0"></a>
 
