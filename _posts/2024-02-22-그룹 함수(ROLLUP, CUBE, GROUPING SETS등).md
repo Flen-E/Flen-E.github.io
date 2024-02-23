@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[SQLD] 그룹 함수와 관련된 확장 기능 (ROLLUP, CUBE, GROUPING SETS)"
-date:   2024-02-25 12:20:00 -0500
+date:   2024-02-22 12:20:00 -0500
 excerpt: "그룹화 확장 기능인 ROLLUP, CUBE, GROUPING SETS에 대해 알아보자"
 tags: SQLD
 category : [ SQLD ]

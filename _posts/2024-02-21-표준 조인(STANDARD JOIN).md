@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[SQLD] 표준 조인 (STANDARD JOIN)"
-date:   2024-02-24 19:20:00 -0500
+date:   2024-02-21 19:20:00 -0500
 excerpt: "표준 조인에 대해 알아보자"
 tags: SQLD
 category : [ SQLD ]
