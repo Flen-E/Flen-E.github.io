@@ -53,12 +53,81 @@ SELECT ...
 - CONNECT_BY_ISLEAF : 전개 과정에서 리프 데이터면 1, 그렇지 않으면 0.
 - CONNECT_BY_ISCYCLE : 전개 과정에서 자식이 존재하면 1, 그렇지 않으면 0. CYCLE기능 사용할 때만 사용 가능.
 
+
+### 사원 테이블
+예시로 사원 테이블을 가져왔다.
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/7vbRZ9d/1.png" alt="1" border="0"></a>
+
+사원 테이블을 보면 '사원이름' 과 ' 직속상관' 컬럼은 계층형 데이터이다.  
+
+
+
 ### 순방향 쿼리
 
 ```
-SELECT LEVEL, 사원이름, 직속상관, 직급
+SELECT LEVEL, 사원이름, 직속상관, 직급, 월급
   FROM 사원
   START WITH 직속상관 IS NULL
-  CONNECT BY PRIOR 사원이름 = 직속상관;
+  CONNECT BY PRIOR 사원이름 = 직속상관
+  ORDER SIBLINGS BY 월급 DESC;
 ```
+
+`START WITH 직속상관`을 줘서 '직속상관' 컬럼을 루트데이터로 지정하고, IS NULL 조건을 통해  
+직속상관이 없는 사원부터 데이터 전개가 시작되어 진다.  
+위 테이블에서의 직속상관이 없는 직급은 사장이고 사장부터 데이터가 전개가 시작된다.  
+`CONNECT BY PRIOR 사원이름 = 직속상관` 을 통해 직속상관(부모)에서 사원이름(자식) 으로 순방향 전개가 시작되어 진다.  
+`ORDER SIBLINGS BY 월급 DESC`를 통해서는 전개 중 동일 LEVEL에서 월급을 이용하여 내림차순으로 정렬을 해주었다.
+
+**결과**
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/yhqkdy2/2.png" alt="2" border="0"></a>
+
+### 역방향 쿼리
+
+```
+SELECT LEVEL, 사원이름, 직속상관, 직급, 월급
+  FROM 사원
+  START WITH 사원이름 = '최정재'
+  CONNECT BY PRIOR 직속상관 = 사원이름;
+```
+
+`START WITH 사원이름 = '최정재'`을 줘서 사원이름이 최정재인 사원부터 전개를 시작한다.  
+`CONNECT BY PRIOR 직속상관 = 사원이름`을 통해 사원이름(자식)에서 직속상관(부모) 으로 역방향 전개가 시작되어 진다.  
+
+**결과**
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/cLxnbFN/3.png" alt="3" border="0"></a>
+
+---
+
+ORACLE은 계층형 질의를 사용할 때 사용자 편의성을 위해 계층형 질의 함수를 제공한다.
+
+### 계층형 질의 함수
+
+- SYS_CONNECT_BY_PATH(컬럼명, 경로분리기호) : 루트 데이터로부터 현재 위치까지 전개할 데이터의 경로를 표시.
+- CONNECT_BY_ROOT(컬럼명) : 현재 전개할 데이터의 루트 데이터를 표시.
+
+ ### 계층형 질의 함수를 사용한 쿼리
+ 
+ ```
+ SELECT LEVEL, 
+        사원이름, 
+        직속상관, 
+        직급, 
+        월급,
+        SYS_CONNECT_BY_PATH(사원이름, '/') 직급경로,
+        CONNECT_BY_ROOT(사원이름) 최상위사원
+  FROM 사원
+  START WITH 직속상관 IS NULL
+  CONNECT BY PRIOR 사원이름 = 직속상관
+  ORDER SIBLINGS BY 월급 DESC;
+ ```
+
+`SYS_CONNECT_BY_PATH(사원이름, '/')` 를 이용하여 루트데이터인 직속상관 IS NULL 부터 현재 위치까지 전개할 데이터 경로를 표시.  
+`CONNECT_BY_ROOT(사원이름)`를 이용하여 최상위 데이터를 표시.
+
+**결과**
+
+<a href="https://ibb.co/fxcR0x0"><img src="https://i.ibb.co/P6SpC6C/4.png" alt="4" border="0"></a>
 
