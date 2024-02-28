@@ -53,3 +53,12 @@ SELECT ...
 - CONNECT_BY_ISLEAF : 전개 과정에서 리프 데이터면 1, 그렇지 않으면 0.
 - CONNECT_BY_ISCYCLE : 전개 과정에서 자식이 존재하면 1, 그렇지 않으면 0. CYCLE기능 사용할 때만 사용 가능.
 
+### 순방향 쿼리
+
+```
+SELECT LEVEL, 사원이름, 직속상관, 직급
+  FROM 사원
+  START WITH 직속상관 IS NULL
+  CONNECT BY PRIOR 사원이름 = 직속상관;
+```
+
