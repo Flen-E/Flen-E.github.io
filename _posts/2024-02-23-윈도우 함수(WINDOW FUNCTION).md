@@ -185,6 +185,9 @@ SELECT DEPTNO, ENAME, SAL
 
 파티션별 전체건수에서 현재 행보다 작거나 같은 건수에 대한 누적백분율을 구한다.  
 
+PERCENT_RANK와 흡사하여 착각 할 수 있으니 주의.  
+
+
 ```
 SELECT DEPTNO, ENAME, SAL
      , CUME_DIST() OVER (PARTITION BY DEPTNO ORDER BY SAL DESC) as CUME_DIST 
