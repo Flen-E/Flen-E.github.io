@@ -30,18 +30,18 @@ category : [ SQLD ]
 **UNION(합집합)**  
 공통 교집합의 중복을 없애줌.
 
-INTERSECT(차집합)
+**INTERSECT(교집합)**
 
 ### 나. 순수 관계 연산자
 
-```
+
 |일반 집합 연산자|현재 SQL|
 |---|---|
-|SELCT|WHERE 절|
+|SELECT|WHERE 절|
 |PROJECT|SELECT 절|
-|(NATURAL) JOIN|JOIN(ORACLE에서는 MINUS)|
+|(NATURAL) JOIN|JOIN (INNER JOIN, OUTER JOIN, NATURAL JOIN등)|
 |DIVIDE|없어짐|
-```
+
 
 ## FROM 절 JOIN 형태
 
