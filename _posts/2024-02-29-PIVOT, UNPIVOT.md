@@ -8,7 +8,7 @@ category : [ SQLD ]
 ---
 
 이번 2024년도 SQLD에 추가된 PIVOT 절과 UNPIVOT 절에 대해서 알아보도록 하겠다.  
-PIVOT, UNPIVOT 내용은 노랭이 개정판에도 추가되지 않아 
+PIVOT, UNPIVOT 내용은 노랭이 개정판에도 추가되지 않아 어떤 느낌의 문제가 나올지 감이 잡히진 않지만 쓰는 방법을 알면 문제도 풀 수 있지않을까?
 
 # ORACLE에서의 PIVOT, UNPIVOT 
 

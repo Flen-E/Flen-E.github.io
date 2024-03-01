@@ -156,6 +156,12 @@ TURNER| 1500 |.27|
 파티션별로 가장 먼저 나온값을 0, 마지막 나온값을 1로 해서 행 순서별 백분율을 출력한다.  
 (구간별 백분율.)
 
+쉽게 구하는 방법도 있다.
+
+(그룹별 RANK -1 )/(그룹행의 개수 -1 )
+
+이런식으로 RANK를 매긴후 계산하면 쉽게 구할 수 있다.
+
 ```
 SELECT DEPTNO, ENAME, SAL
      , PERCENT_RANK() OVER (PARTITION BY DEPTNO ORDER BY SAL DESC) as P_R 
