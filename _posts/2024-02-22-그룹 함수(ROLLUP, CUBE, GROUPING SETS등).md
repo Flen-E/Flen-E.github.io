@@ -176,8 +176,8 @@ SELECT 상품ID, 날짜, SUM(매출액) 총계
 
 # GROUPING
 
-NULL이 들어가는 부분을 채워주는 용도로 시험에 자주 나오던데   
-GROUPING은 집계함수들을 지원하는 함수로 집계가 계산된 결과에 대해서는 1의 값을 그렇지 않은 결과에 대해서는 0의 값을 가진다.  
+NULL이 들어가는 부분을 채워주는 용도로 시험에 자주 나온다 예제를 통해 알아보자.  
+
 
 ```
 SELECT 
@@ -187,6 +187,12 @@ SELECT
 FROM 상품
 GROUP BY CUBE(상품ID,날짜);
 ```
+
+여기서 CASE 구문에서 WHEN 뒤에 1이 오는 경우는 GROUPING 함수의 반환값을 나타낸다.  
+ GROUPING 함수의 반환값은 0 OR 1이며 1은 NULL값을 나타내는 그룹, 0은 NULL이 아닌 값을 나타내어,  
+GROUPING(상품ID) WHEN 1 THEN '모든상품' ELSE 상품ID END인 경우  
+NULL이면 '모든상품' NULL이 아니라면 상품ID로 대체된다는 뜻이다.  
+
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/z57xfsb/25-11.png" alt="25-11" border="0"></a>
 
