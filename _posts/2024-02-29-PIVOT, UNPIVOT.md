@@ -21,7 +21,7 @@ PIVOT, UNPIVOT 내용은 노랭이 개정판에도 추가되지 않아 어떤 �
 
 ### 원본 데이터
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/rMpFyHZ/2.png" alt="2" border="0"></a>
+<img src="https://i.ibb.co/rMpFyHZ/2.png" alt="2" border="0">
 
 ### PIVOT을 이용한 SQL문
 
@@ -39,7 +39,7 @@ SELECT *
 
 ### 결과
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/sWdg9PQ/3.png" alt="3" border="0"></a>
+<img src="https://i.ibb.co/sWdg9PQ/3.png" alt="3" border="0">
 
 ## UNPIVOT
 
@@ -48,7 +48,7 @@ SELECT *
 
 ### 원본 데이터
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/Y8XKk1n/4.png" alt="4" border="0"></a>
+<img src="https://i.ibb.co/Y8XKk1n/4.png" alt="4" border="0">
 
 ### UNPIVOT을 이용한 SQL문
 
@@ -63,5 +63,5 @@ SELECT *
 
 ### 결과
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/XVjyPYq/5.png" alt="5" border="0"></a>
+<img src="https://i.ibb.co/XVjyPYq/5.png" alt="5" border="0">
 

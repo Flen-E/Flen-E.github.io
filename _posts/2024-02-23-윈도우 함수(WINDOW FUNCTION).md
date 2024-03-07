@@ -78,9 +78,10 @@ BETWEEN CURRENT ROW는 생략이 가능하며 현재 행이 아닌 맨 마지막
 
 말로만 디디디딕 적어놓아봤자 이해 하기 어렵다. 예시를 통해 알아보자.  
 
-<a href="https://ibb.co/3B2P99j"><img src="https://i.ibb.co/YpmVFF1/1.png" alt="1" border="0"></a>
+<img src="https://i.ibb.co/YpmVFF1/1.png" alt="1" border="0">  
 
-<a href="https://ibb.co/CbF066z"><img src="https://i.ibb.co/c6dTww1/2.png" alt="2" border="0"></a>
+
+<img src="https://i.ibb.co/c6dTww1/2.png" alt="2" border="0">
 
 정확한 결과를 보이기 위해 타이핑 대신 사진을 가져왔다.
 
@@ -88,19 +89,19 @@ RANGE UNBOUNCED PRECEDING 은 RANGE BETWEEN UNBOUNCED PRECEDING AND CURRENT ROW�
 
 현재는 N의 값으로 비교한 것이 없기에 RANGE든 ROW든 똑같은 값이 나온다.
 
-<a href="https://ibb.co/dcCjks1"><img src="https://i.ibb.co/RSrYQGZ/3.png" alt="3" border="0"></a>
+<img src="https://i.ibb.co/RSrYQGZ/3.png" alt="3" border="0">
 
 CURRENT ROW가 아닌 마지막 행까지 비교하고 싶다면 UNBOUNDED FOLLOWING을 사용하면 된다.  
 
 이제 N값을 사용하여 범위에 따른 결과를 보고 RANGE와 ROW 차이를 느껴 봐보자.  
 (위에 내용은 RANGE나 ROW나 똑같다)
 
-<a href="https://ibb.co/T2K6Pqh"><img src="https://i.ibb.co/LRQm9hp/4.png" alt="4" border="0"></a>
+<img src="https://i.ibb.co/LRQm9hp/4.png" alt="4" border="0">
 
 ROW를 사용 하게 되면 1 PRECEDING으로 인해 현재 행에서 앞으로 1 행,  
  2 FOLLOWING으로 인해 현재 행에서 뒤로 2행까지의 값들의 합이 출력되는 것을 확인 할 수 있다.  
 
-<a href="https://ibb.co/mTZVCnb"><img src="https://i.ibb.co/jf0PvCb/5.png" alt="5" border="0"></a>
+<img src="https://i.ibb.co/jf0PvCb/5.png" alt="5" border="0">
 
 RANGE를 사용하게 되면 현재 행으로 부터 값의 크기를 비교하게 되는데,  
 600 PRECEDING으로 인해 현재 행값에서 -600인 값부터,  
