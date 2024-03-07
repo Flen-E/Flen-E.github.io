@@ -45,7 +45,7 @@ category : [ SQLD ]
 
 ## FROM 절 JOIN 형태
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/F5jFgrR/JOIN.png" alt="JOIN" border="0"></a>
+<img src="https://i.ibb.co/F5jFgrR/JOIN.png" alt="JOIN" border="0">
 
 다양한 JOIN의 형태들을 볼 수 있다.
 
