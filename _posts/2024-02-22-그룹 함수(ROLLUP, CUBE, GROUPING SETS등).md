@@ -16,7 +16,7 @@ GROUP BY 절에 쓰이는 ROLLUP, CUBE, GROUPING SETS 등 다양한 그룹 함�
 
 일단 데이터는 예외들을 보여주고 완전히 익힌다는 목적으로 헷갈리게 넣은 점 유의하길 바란다.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/mbfpb55/25-1.png" alt="25-1" border="0"></a>
+<img src="https://i.ibb.co/mbfpb55/25-1.png" alt="25-1" border="0">
 
 데이터를 7개를 집어 넣은 테이블을 가지고 예시를 보며 공부해보도록 하자.  
 
@@ -31,7 +31,7 @@ SELECT 상품ID, 날짜, SUM(매출액) 매출액
     GROUP BY 상품ID, 날짜;
 ```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/qs1zhRh/25-2.png" alt="25-2" border="0"></a>
+<img src="https://i.ibb.co/qs1zhRh/25-2.png" alt="25-2" border="0">
 
 상품ID,날짜로 그룹하여 P1 11월들이 그룹화되어 매출액이 합해진것을 확인 할 수 있다.  
 
@@ -52,7 +52,7 @@ SELECT 상품ID, 날짜, SUM(매출액) 매출액
     GROUP BY ROLLUP(상품ID, 날짜)
 ```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/PYS5T9F/25-3.jpg" alt="25-3" border="0"></a>
+<img src="https://i.ibb.co/PYS5T9F/25-3.jpg" alt="25-3" border="0">
 
 인자 순서를 다르게 한다면 당연히 값도 달라지는 것을 확인 할 수 있다.
 
@@ -62,7 +62,7 @@ SELECT 상품ID, 날짜, SUM(매출액) 매출액
     GROUP BY ROLLUP(날짜, 상품ID)
 ```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/BgSzV9P/25-4.jpg" alt="25-4" border="0"></a>
+<img src="https://i.ibb.co/BgSzV9P/25-4.jpg" alt="25-4" border="0">
 
 아까와 반대로 
 1. 첫번째 인자(날짜) 별 두번째 인자(상품ID)  
@@ -79,7 +79,7 @@ SELECT 상품ID, 날짜, SUM(매출액) 매출액
 
 같은 경우도 알아두면 좋다.  
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/FHvsv9W/25-5.jpg" alt="25-5" border="0"></a>
+<img src="https://i.ibb.co/FHvsv9W/25-5.jpg" alt="25-5" border="0">
 
 더 이해하기 쉽게 설명하자면
 1. GROUP BY (상품ID), 날짜
@@ -97,20 +97,20 @@ SELECT 상품ID, 날짜, SUM(매출액) 매출액
 3. COL1
 4. 총계
 
-<a href="https://ibb.co/NYwYkyQ"><img src="https://i.ibb.co/ysLsMQG/25-6.jpg" alt="25-6" border="0"></a>
+<img src="https://i.ibb.co/ysLsMQG/25-6.jpg" alt="25-6" border="0">
 
 **GROUP BY ROLLUP(COL1, (COL2, COL3))**
 1. COL1, (COL2, COL3)
 2. COL1
 3. 총계
 
-<a href="https://ibb.co/pv5FCbC"><img src="https://i.ibb.co/99S5RcR/25-8.jpg" alt="25-8" border="0"></a>
+<img src="https://i.ibb.co/99S5RcR/25-8.jpg" alt="25-8" border="0">
 
 **GROUP BY COL1, ROLLUP((COL2,COL3))**
 1. COL1, (COL2,COL3)
 2. COL1
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/nkChpLc/25-7.jpg" alt="25-7" border="0"></a>
+<img src="https://i.ibb.co/nkChpLc/25-7.jpg" alt="25-7" border="0">
 
 (괄호 실수로 빼먹음 COL1,(COL2,COL3))
 
@@ -129,7 +129,7 @@ SELECT 상품ID, 날짜, SUM(매출액) 총계
     GROUP BY CUBE(상품ID, 날짜)
 ```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/gwL2Rfq/25-9.jpg" alt="25-9" border="0"></a>
+<img src="https://i.ibb.co/gwL2Rfq/25-9.jpg" alt="25-9" border="0">
 
 아까 위에 열심히 설명 한거 처럼 CUBE도 똑같이 적용되기에,
 
@@ -164,7 +164,7 @@ SELECT 상품ID, 날짜, SUM(매출액) 총계
     GROUP BY GROUPING SETS(상품ID, 날짜)
 ```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/HC62GD9/25-10.jpg" alt="25-10" border="0"></a>
+<img src="https://i.ibb.co/HC62GD9/25-10.jpg" alt="25-10" border="0">
 
 여태 그렸던 것들이 이제 떠오르면서 ROLLUP과 CUBE에 어떻게 맞춰야 할지 감이 올 것이다.
 
@@ -176,8 +176,8 @@ SELECT 상품ID, 날짜, SUM(매출액) 총계
 
 # GROUPING
 
-NULL이 들어가는 부분을 채워주는 용도로 시험에 자주 나오던데   
-GROUPING은 집계함수들을 지원하는 함수로 집계가 계산된 결과에 대해서는 1의 값을 그렇지 않은 결과에 대해서는 0의 값을 가진다.  
+NULL이 들어가는 부분을 채워주는 용도로 시험에 자주 나온다 예제를 통해 알아보자.  
+
 
 ```
 SELECT 
@@ -188,5 +188,11 @@ FROM 상품
 GROUP BY CUBE(상품ID,날짜);
 ```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/z57xfsb/25-11.png" alt="25-11" border="0"></a>
+여기서 CASE 구문에서 WHEN 뒤에 1이 오는 경우는 GROUPING 함수의 반환값을 나타낸다.  
+ GROUPING 함수의 반환값은 0 OR 1이며 1은 NULL값을 나타내는 그룹, 0은 NULL이 아닌 값을 나타내어,  
+GROUPING(상품ID) WHEN 1 THEN '모든상품' ELSE 상품ID END인 경우  
+NULL이면 '모든상품' NULL이 아니라면 상품ID로 대체된다는 뜻이다.  
+
+
+<img src="https://i.ibb.co/z57xfsb/25-11.png" alt="25-11" border="0">
 

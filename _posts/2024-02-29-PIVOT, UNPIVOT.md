@@ -8,7 +8,7 @@ category : [ SQLD ]
 ---
 
 이번 2024년도 SQLD에 추가된 PIVOT 절과 UNPIVOT 절에 대해서 알아보도록 하겠다.  
-PIVOT, UNPIVOT 내용은 노랭이 개정판에도 추가되지 않아 
+PIVOT, UNPIVOT 내용은 노랭이 개정판에도 추가되지 않아 어떤 느낌의 문제가 나올지 감이 잡히진 않지만 쓰는 방법을 알면 문제도 풀 수 있지않을까?
 
 # ORACLE에서의 PIVOT, UNPIVOT 
 
@@ -17,11 +17,11 @@ PIVOT, UNPIVOT 내용은 노랭이 개정판에도 추가되지 않아
 - PIVOT은 행 데이터를 열 데이터로 변환하는 것.  
 일반적으로 특정 열을 기준으로 집계를 수행하고 이를 새로운 열로 표현함.  
 - PIVOT은 특정 열의 고유한 값에 따라 행을 그룹화하고 이를 새로운 열로 변환함.  
-- 예를 들어, 날짜별 판매량으로 집계 할 때, PIVOT을 사용하여 날짜를 열로 변환하고 날짜에 대한 판매량을 표시 할 수 있다.  
+- 예를 들어, 날짜별 판매량으로 집계 할 때, PIVOT을 사용하여 날짜를 열로 변환하고 날짜에 대한 판매량을 표시 할 수 있음.  
 
 ### 원본 데이터
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/rMpFyHZ/2.png" alt="2" border="0"></a>
+<img src="https://i.ibb.co/rMpFyHZ/2.png" alt="2" border="0">
 
 ### PIVOT을 이용한 SQL문
 
@@ -39,7 +39,7 @@ SELECT *
 
 ### 결과
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/sWdg9PQ/3.png" alt="3" border="0"></a>
+<img src="https://i.ibb.co/sWdg9PQ/3.png" alt="3" border="0">
 
 ## UNPIVOT
 
@@ -48,7 +48,7 @@ SELECT *
 
 ### 원본 데이터
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/Y8XKk1n/4.png" alt="4" border="0"></a>
+<img src="https://i.ibb.co/Y8XKk1n/4.png" alt="4" border="0">
 
 ### UNPIVOT을 이용한 SQL문
 
@@ -63,5 +63,5 @@ SELECT *
 
 ### 결과
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/XVjyPYq/5.png" alt="5" border="0"></a>
+<img src="https://i.ibb.co/XVjyPYq/5.png" alt="5" border="0">
 

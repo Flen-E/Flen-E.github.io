@@ -19,6 +19,7 @@ comments: false
 
 ## Contatct Me
 
-naver email : cjj642@naver.com
+naver email : cjj642@naver.com  
+
 gmail : jeongjae7957@gmail.com
 

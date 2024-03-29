@@ -57,7 +57,7 @@ SELECT ...
 ### 사원 테이블
 예시로 사원 테이블을 가져왔다.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/7vbRZ9d/1.png" alt="1" border="0"></a>
+<img src="https://i.ibb.co/7vbRZ9d/1.png" alt="1" border="0">
 
 사원 테이블을 보면 '사원이름' 과 ' 직속상관' 컬럼은 계층형 데이터이다.  
 
@@ -81,7 +81,7 @@ SELECT LEVEL, 사원이름, 직속상관, 직급, 월급
 
 **결과**
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/yhqkdy2/2.png" alt="2" border="0"></a>
+<img src="https://i.ibb.co/yhqkdy2/2.png" alt="2" border="0">
 
 ### 역방향 쿼리
 
@@ -97,7 +97,7 @@ SELECT LEVEL, 사원이름, 직속상관, 직급, 월급
 
 **결과**
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/cLxnbFN/3.png" alt="3" border="0"></a>
+<img src="https://i.ibb.co/cLxnbFN/3.png" alt="3" border="0">
 
 ---
 
@@ -108,7 +108,7 @@ ORACLE은 계층형 질의를 사용할 때 사용자 편의성을 위해 계층
 - SYS_CONNECT_BY_PATH(컬럼명, 경로분리기호) : 루트 데이터로부터 현재 위치까지 전개할 데이터의 경로를 표시.
 - CONNECT_BY_ROOT(컬럼명) : 현재 전개할 데이터의 루트 데이터를 표시.
 
- ### 계층형 질의 함수를 사용한 쿼리
+### 계층형 질의 함수를 사용한 쿼리
  
  ```
  SELECT LEVEL, 
@@ -129,5 +129,5 @@ ORACLE은 계층형 질의를 사용할 때 사용자 편의성을 위해 계층
 
 **결과**
 
-<a href="https://ibb.co/fxcR0x0"><img src="https://i.ibb.co/P6SpC6C/4.png" alt="4" border="0"></a>
+<img src="https://i.ibb.co/P6SpC6C/4.png" alt="4" border="0">
 
