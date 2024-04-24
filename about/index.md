@@ -16,6 +16,11 @@ comments: false
 * Git, GitHub, Notion
 * Figma, BuilderX
 
+## Certificate
+* 정보처리기사
+* TOEIC-S (IM3)
+* SQLD
+
 
 ## Contatct Me
 
