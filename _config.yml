@@ -67,6 +67,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-paginate
 
 jekyll-mentions:
     base_url: https://github.com
@@ -78,5 +79,5 @@ exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.j
 plugins:
   - jekyll-paginate
 
-paginate: 10
+paginate:	5
 paginate_path: "/page/:num/"
