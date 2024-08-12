@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentPage > 1) {
             const prevButton = document.createElement('a');
             prevButton.href = "#";
-            prevButton.textContent = "Previous";
+            prevButton.textContent = "Prev";
             prevButton.className = 'btn zoombtn';
             prevButton.addEventListener('click', function (e) {
                 e.preventDefault();
