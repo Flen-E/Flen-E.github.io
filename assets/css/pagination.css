@@ -16,3 +16,7 @@
     background-color: #3498db; /* 버튼에 마우스 올릴 때 배경색 */
     color: #fff; /* 버튼에 마우스 올릴 때 텍스트 색상 */
 }
+
+.pagination {
+    text-align: center;
+}
