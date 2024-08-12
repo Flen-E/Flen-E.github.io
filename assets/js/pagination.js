@@ -1,5 +1,3 @@
-// pagination.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const postsPerPage = 10; // 페이지당 포스트 수
 
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             prevButton.addEventListener('click', function (e) {
                 e.preventDefault();
                 displayPosts(--currentPage);
-                updatePaginationButtons();
+                setupPagination();
             });
             fragment.appendChild(prevButton);
         }
@@ -61,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 displayPosts(1);
                 currentPage = 1;
-                updatePaginationButtons();
+                setupPagination();
             });
             fragment.appendChild(firstPageButton);
 
@@ -83,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 displayPosts(i);
                 currentPage = i;
-                updatePaginationButtons();
+                setupPagination();
             });
             fragment.appendChild(pageButton);
         }
@@ -104,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 displayPosts(totalPages);
                 currentPage = totalPages;
-                updatePaginationButtons();
+                setupPagination();
             });
             fragment.appendChild(lastPageButton);
         }
@@ -118,20 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
             nextButton.addEventListener('click', function (e) {
                 e.preventDefault();
                 displayPosts(++currentPage);
-                updatePaginationButtons();
+                setupPagination();
             });
             fragment.appendChild(nextButton);
         }
 
         pagination.appendChild(fragment);
-    }
-
-    function updatePaginationButtons() {
-        const buttons = pagination.querySelectorAll('a');
-        buttons.forEach(button => button.classList.remove('current'));
-        if (buttons.length > 0) {
-            buttons[currentPage - 1].classList.add('current');
-        }
     }
 
     let currentPage = 1;
