@@ -2,12 +2,14 @@
 .pagination {
     display: flex;
     justify-content: center; /* 중앙 정렬 */
-    margin-top: 20px; /* 위쪽 여백 추가 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-top: 20px; /* 위쪽 여백 */
 }
 
-.pagination .current {
-    background-color: #f39c12; /* 현재 페이지 버튼 배경색 */
-    color: #fff; /* 현재 페이지 버튼 텍스트 색상 */
+.pagination ul {
+    list-style: none; /* ul의 기본 스타일 제거 */
+    padding: 0;
+    margin: 0;
 }
 
 .pagination a.btn.zoombtn {
@@ -16,6 +18,11 @@
     border-radius: 5px; /* 버튼 둥근 모서리 */
     text-decoration: none; /* 텍스트 밑줄 제거 */
     color: #333; /* 기본 버튼 텍스트 색상 */
+}
+
+.pagination .current {
+    background-color: #f39c12; /* 현재 페이지 버튼 배경색 */
+    color: #fff; /* 현재 페이지 버튼 텍스트 색상 */
 }
 
 .pagination a.btn.zoombtn:hover {
