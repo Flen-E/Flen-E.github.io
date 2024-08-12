@@ -67,6 +67,7 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-pagination
 
 jekyll-mentions:
     base_url: https://github.com
@@ -74,3 +75,8 @@ jekyll-mentions:
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
 
+plugins:
+  - jekyll-paginate  # 플러그인 목록에 추가
+
+paginate: 10
+paginate_path: "/page/:num/"

@@ -22,8 +22,7 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
-                        {% if post.project == null %}
+                    {% for post in paginator.posts %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -31,29 +30,28 @@ layout: compress
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
                         </li>
                     </ul>
-                        {% endif %}
                     {% endfor %}
                 </div>
             </div>
         </div>
-                <!-- 카테고리  -->
-       {% include categorybox.html %}
+        <!-- 카테고리  -->
+        {% include categorybox.html %}
     </header>
     <div class="pagination">
-    {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="btn zoombtn">Previous</a>
-    {% endif %}
-    {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-            <span class="btn zoombtn current">{{ page }}</span>
-        {% else %}
-            <a href="{{ paginator.page_path | prepend: site.baseurl | replace: ':num', page }}" class="btn zoombtn">{{ page }}</a>
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="btn zoombtn">Previous</a>
         {% endif %}
-    {% endfor %}
-    {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="btn zoombtn">Next</a>
-    {% endif %}
-</div>
+        {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+                <span class="btn zoombtn current">{{ page }}</span>
+            {% else %}
+                <a href="{{ paginator.page_path | prepend: site.baseurl | replace: ':num', page }}" class="btn zoombtn">{{ page }}</a>
+            {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="btn zoombtn">Next</a>
+        {% endif %}
+    </div>
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
