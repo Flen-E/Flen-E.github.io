@@ -47,7 +47,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // 페이지 버튼
-        for (let i = 1; i <= totalPages; i++) {
+        const minPage = Math.max(1, currentPage - 1);
+        const maxPage = Math.min(totalPages, currentPage + 1);
+
+        if (currentPage > 2) {
+            const firstPageButton = document.createElement('a');
+            firstPageButton.href = "#";
+            firstPageButton.textContent = '1';
+            firstPageButton.className = 'btn zoombtn';
+            firstPageButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                displayPosts(1);
+                currentPage = 1;
+                updatePaginationButtons();
+            });
+            fragment.appendChild(firstPageButton);
+
+            if (currentPage > 3) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.className = 'btn zoombtn';
+                fragment.appendChild(dots);
+            }
+        }
+
+        for (let i = minPage; i <= maxPage; i++) {
             const pageButton = document.createElement('a');
             pageButton.href = "#";
             pageButton.textContent = i;
@@ -60,6 +84,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 updatePaginationButtons();
             });
             fragment.appendChild(pageButton);
+        }
+
+        if (currentPage < totalPages - 1) {
+            if (currentPage < totalPages - 2) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.className = 'btn zoombtn';
+                fragment.appendChild(dots);
+            }
+
+            const lastPageButton = document.createElement('a');
+            lastPageButton.href = "#";
+            lastPageButton.textContent = totalPages;
+            lastPageButton.className = 'btn zoombtn';
+            lastPageButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                displayPosts(totalPages);
+                currentPage = totalPages;
+                updatePaginationButtons();
+            });
+            fragment.appendChild(lastPageButton);
         }
 
         // 다음 페이지 버튼
