@@ -22,7 +22,8 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in paginator.posts %}
+                    {% for post in site.posts %} 
+                        {% if post.project == null %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -30,12 +31,13 @@ layout: compress
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
                         </li>
                     </ul>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>
         </div>
-        <!-- 카테고리  -->
-        {% include categorybox.html %}
+                <!-- 카테고리  -->
+       {% include categorybox.html %}
     </header>
     <div class="pagination">
     {% if paginator.previous_page %}
