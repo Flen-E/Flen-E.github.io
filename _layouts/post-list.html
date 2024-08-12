@@ -2,12 +2,23 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<html class="no-js">
 <head>
     {% include head.html %}
+    <script type="application/json" id="post-data">
+        {
+            "posts": [
+                {% for post in site.posts %}
+                {
+                    "title": "{{ post.title | escape }}",
+                    "url": "{{ site.url }}{{ post.url }}",
+                    "excerpt": "{{ post.excerpt | escape }}"
+                }
+                {% if forloop.last == false %},{% endif %}
+                {% endfor %}
+            ]
+        }
+    </script>
 </head>
 <body>
     {% include nav.html %}
@@ -21,42 +32,21 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
-                <div class="post-list">
-                    {% for post in site.posts %} 
-                        {% if post.project == null %}
-                    <ul>
-                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
-                        </li>
-                    </ul>
-                        {% endif %}
-                    {% endfor %}
+                <div class="post-list" id="post-list">
+                    <!-- 포스트 아이템이 여기에 동적으로 추가됩니다 -->
+                </div>
+                <div class="pagination" id="pagination">
+                    <!-- 페이지네이션 버튼이 여기에 동적으로 추가됩니다 -->
                 </div>
             </div>
         </div>
-        <div class="pagination">
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="btn zoombtn">Previous</a>
-            {% endif %}
-            {% for page in (1..paginator.total_pages) %}
-                {% if page == paginator.page %}
-                    <span class="btn zoombtn current">{{ page }}</span>
-                {% else %}
-                    <a href="{{ paginator.page_path | prepend: site.baseurl | replace: ':num', page }}" class="btn zoombtn">{{ page }}</a>
-                {% endif %}
-            {% endfor %}
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="btn zoombtn">Next</a>
-            {% endif %}
-        </div>
-                <!-- 카테고리  -->
-       {% include categorybox.html %}
+        <!-- 카테고리 -->
+        {% include categorybox.html %}
     </header>
     
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
+    <script src="{{ site.url }}/assets/js/pagination.js"></script>
 </body>
 </html>
