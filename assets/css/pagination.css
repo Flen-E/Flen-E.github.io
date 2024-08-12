@@ -1,4 +1,10 @@
 /* pagination.css */
+.pagination {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    margin-top: 20px; /* 위쪽 여백 추가 */
+}
+
 .pagination .current {
     background-color: #f39c12; /* 현재 페이지 버튼 배경색 */
     color: #fff; /* 현재 페이지 버튼 텍스트 색상 */
@@ -15,8 +21,4 @@
 .pagination a.btn.zoombtn:hover {
     background-color: #3498db; /* 버튼에 마우스 올릴 때 배경색 */
     color: #fff; /* 버튼에 마우스 올릴 때 텍스트 색상 */
-}
-
-.pagination {
-    text-align: center;
 }
