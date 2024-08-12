@@ -1,3 +1,5 @@
+// pagination.js
+
 document.addEventListener("DOMContentLoaded", function () {
     const postsPerPage = 10; // 페이지당 포스트 수
 
@@ -127,7 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function updatePaginationButtons() {
         const buttons = pagination.querySelectorAll('a');
         buttons.forEach(button => button.classList.remove('current'));
-        buttons[currentPage].classList.add('current');
+        if (buttons.length > 0) {
+            buttons[currentPage - 1].classList.add('current');
+        }
     }
 
     let currentPage = 1;
