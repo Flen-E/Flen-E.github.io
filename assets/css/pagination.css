@@ -1,0 +1,18 @@
+/* pagination.css */
+.pagination .current {
+    background-color: #f39c12; /* 현재 페이지 버튼 배경색 */
+    color: #fff; /* 현재 페이지 버튼 텍스트 색상 */
+}
+
+.pagination a.btn.zoombtn {
+    margin: 0 5px; /* 버튼 간격 */
+    padding: 10px 15px; /* 버튼 크기 */
+    border-radius: 5px; /* 버튼 둥근 모서리 */
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    color: #333; /* 기본 버튼 텍스트 색상 */
+}
+
+.pagination a.btn.zoombtn:hover {
+    background-color: #3498db; /* 버튼에 마우스 올릴 때 배경색 */
+    color: #fff; /* 버튼에 마우스 올릴 때 텍스트 색상 */
+}

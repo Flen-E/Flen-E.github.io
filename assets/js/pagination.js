@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const pagination = document.getElementById('pagination');
     const totalPages = Math.ceil(posts.length / postsPerPage);
 
+    let currentPage = 1;
+
     function displayPosts(pageNumber) {
         postList.innerHTML = '';
         const start = (pageNumber - 1) * postsPerPage;
@@ -40,38 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
             prevButton.className = 'btn zoombtn';
             prevButton.addEventListener('click', function (e) {
                 e.preventDefault();
-                displayPosts(--currentPage);
+                currentPage--;
+                displayPosts(currentPage);
                 setupPagination();
             });
             fragment.appendChild(prevButton);
         }
 
-        // 페이지 버튼
-        const minPage = Math.max(1, currentPage - 1);
-        const maxPage = Math.min(totalPages, currentPage + 1);
-
-        if (currentPage > 2) {
-            const firstPageButton = document.createElement('a');
-            firstPageButton.href = "#";
-            firstPageButton.textContent = '1';
-            firstPageButton.className = 'btn zoombtn';
-            firstPageButton.addEventListener('click', function (e) {
-                e.preventDefault();
-                displayPosts(1);
-                currentPage = 1;
-                setupPagination();
-            });
-            fragment.appendChild(firstPageButton);
-
-            if (currentPage > 3) {
-                const dots = document.createElement('span');
-                dots.textContent = '...';
-                dots.className = 'btn zoombtn';
-                fragment.appendChild(dots);
-            }
-        }
-
-        for (let i = minPage; i <= maxPage; i++) {
+        // 현재 페이지 및 주변 페이지 표시
+        for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
             const pageButton = document.createElement('a');
             pageButton.href = "#";
             pageButton.textContent = i;
@@ -79,32 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
             if (i === currentPage) pageButton.classList.add('current');
             pageButton.addEventListener('click', function (e) {
                 e.preventDefault();
-                displayPosts(i);
                 currentPage = i;
+                displayPosts(currentPage);
                 setupPagination();
             });
             fragment.appendChild(pageButton);
-        }
-
-        if (currentPage < totalPages - 1) {
-            if (currentPage < totalPages - 2) {
-                const dots = document.createElement('span');
-                dots.textContent = '...';
-                dots.className = 'btn zoombtn';
-                fragment.appendChild(dots);
-            }
-
-            const lastPageButton = document.createElement('a');
-            lastPageButton.href = "#";
-            lastPageButton.textContent = totalPages;
-            lastPageButton.className = 'btn zoombtn';
-            lastPageButton.addEventListener('click', function (e) {
-                e.preventDefault();
-                displayPosts(totalPages);
-                currentPage = totalPages;
-                setupPagination();
-            });
-            fragment.appendChild(lastPageButton);
         }
 
         // 다음 페이지 버튼
@@ -115,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
             nextButton.className = 'btn zoombtn';
             nextButton.addEventListener('click', function (e) {
                 e.preventDefault();
-                displayPosts(++currentPage);
+                currentPage++;
+                displayPosts(currentPage);
                 setupPagination();
             });
             fragment.appendChild(nextButton);
@@ -124,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination.appendChild(fragment);
     }
 
-    let currentPage = 1;
+    // 초기 설정
     setupPagination();
     displayPosts(currentPage); // 초기 페이지를 1로 설정
 });
