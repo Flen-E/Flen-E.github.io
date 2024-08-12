@@ -79,5 +79,5 @@ exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.j
 plugins:
   - jekyll-paginate
 
-paginate:	5
+paginate: 10
 paginate_path: "/page/:num/"
