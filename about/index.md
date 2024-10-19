@@ -20,6 +20,7 @@ comments: false
 * 정보처리기사
 * TOEIC-S (IM3)
 * SQLD
+* 한국사능력검정시험2급
 
 ## Cover Letter
 
